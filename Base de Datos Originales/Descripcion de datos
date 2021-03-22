@@ -1,0 +1,7 @@
+Aquí se muestran las bases de datos originales usadas para elaborar el proyecto
+El excel es como se descargó de internet
+El csv de surgeries son los datos en brutos que se manejaron principalmente
+El csv de repeat son los jugadores que han tenido la cirugia de Tommy John dos o más veces
+  -Con este csv de repeat se limpia el csv de surgeries para eliminar a jugadores con registros dobles.
+  -se eliminan los registros más nuevos de estos jugadores repetidos
+  
