@@ -1,0 +1,24 @@
+Aqui se encuentra el csv final generado al unir las bases de datos originales y añadir columnas para un mejor entendimiento de los datos
+En las columnas se añade:
+Surgeon: unknow si estaba en blanco
+highscool: international si estaba en blanco
+college: none si estaba en blanco
+Injured elbow:
+es una nueva columna
+indica que codo es sometido a cirugia
+    L: izquierdo
+    R: derecho
+Inj E is Throw E
+Dice si el codo lastimado es con el que lanza
+    TRUE: es el mismo codo con el que lanza
+    FALSE: es el otro codo no con el que lanza
+Velo > Avg
+Dice si lanza por arriba de la velocidad promedio de la MLB
+    YES: por encima del promedio
+    NO: por debajo o igual al promedio
+    NULL: sin datos
+BRK/Off > Avg
+Dice si usa por encima de lanzamientos rompientes o cambios de velocidad vs promedio MLB
+    YES: por encima del promedio
+    NO: por debajo o igual al promedio
+    NULL: sin datos
