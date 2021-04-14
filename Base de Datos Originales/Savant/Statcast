@@ -1,0 +1,14 @@
+Aqui se encuentra el csv de la base de baseball savant
+Se filtra por nombres de jugador de la base de datos de baseball reference
+es de 2015 en adelante
+Para acceder a la base de datos:
+https://baseballsavant.mlb.com/
+Se filtra 
+por avg fastball speed y por usage % de offspeed y breaking pitches y se filtra por año para los jugadores seleccionados
+Se descarga el csv
+
+Columnas
+Player: nombre del jugador
+Velo: velocity, velocidad promedio de las rectas o lanzamientos de velocidad
+offspeed usage: porcentaje de veces que el lanzador utiliza un lanzamiento de cambio de velocidad o rompiente
+Year: año de lesion / cirugia
