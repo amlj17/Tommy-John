@@ -1,0 +1,5 @@
+Se encontraran aqui codigos de python
+Se unen todas las bases originales en python en un solo data frame
+Se seleccionan solamente las columnas que se planean o se podrian usar en el proyecto
+Se quitan jugadores duplicados para que solamente se considere la 1er lesion/cirugia de TJ 
+La 2da limpieza y mas analisis sera en SQL
