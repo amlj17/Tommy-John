@@ -1,0 +1,32 @@
+import numpy as np
+import pandas as pd
+from scipy import stats
+import statistics
+#1 
+#creamos dfs
+#para injuries, estadisticas y velocidad
+injuries = pd.read_csv('TJ.csv', sep=',')
+estad =  pd.read_csv('BRef.csv', sep=',')
+velo =  pd.read_csv('Savant_Velo.csv', sep=',')
+#eliminamos columnas no deseadas de injuries
+#solo queremos quedarnos con player, country, highschool, college, surgeon
+inj1=injuries.drop(['Team', 'Level', 'Throws', 'G', 'IP', 'GS'], axis=1)
+inj2=inj1.drop(['TJ Surgery Date', 'Position', 'Age', 'Return Date (same level)', 'Recovery Time (months)', 'mlbamid', 'Year'], axis=1)
+inj2.head()
+inj3=inj2.drop(['fgid', 'Post-TJ MLB G', 'Active', 'Setback Type.1', 'K-BB%', 'ERA-', 'FIP-', 'G.1', 'GS.1', 'IP.1'], axis=1)
+inj3.head()
+inj4=inj3.drop(['Month', 'Day', 'Post-TJ MLB IP/PA', 'Started\nThrowing', 'Mound', 'Bullpen', 'Game', 'Live\nHitters', 'Setback'], axis=1)
+inj4.head()
+injFin=inj4.drop(['Setback Type', 'Setback.1', 'K-BB%.1', 'ERA-.1', 'FIP-.1'], axis=1)
+injFin.head()
+#juntamos los dfs de stats y injuries
+juntos1= pd.merge(estad,injFin, on = 'Player')
+juntos1.head()
+#eliminamos year de velo
+velo2=velo.drop(['Year'], axis=1)
+#ahora juntos1 con velo
+juntos2=pd.merge(juntos1, velo2, on= 'Player', how='left')
+#quitamos duplicados para solo tener a 1er lesion
+fin=juntos2.drop_duplicates(subset='Player', keep='last')
+#exportamos y se seguira trabajando ahora en sql
+#df.to_csv (r'C:\Users\AM\Desktop\export_dataframe.csv', index = False, header=True)
