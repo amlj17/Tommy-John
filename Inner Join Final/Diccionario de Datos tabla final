@@ -1,1 +1,68 @@
 Descriptores por columna:
+Name: Nombre del jugador
+Team: equipo en el que se encontraba al darse la lesion/operacion
+    ARI: Arizona Diamondbacks
+    ATL: Atlanta Braves
+    BAL: Baltimore Orioles
+    BOS: Boston Red Sox
+    CHC: Chicago Cubs 
+    CHW: Chicago White Sox
+    CIN: Cincinnatti Reds
+    CLE: Cleveland Indians
+    COL: Colorado Rockies
+    DET: Detroit Tigers
+    HOU: Houston Astros
+    KC: Kansas City Royals
+    LAA: Los Angeles Angels of Anaheim
+    LAD: Los Angeles Dodgers
+    MIA: Miami/Florida Marlins
+    MIL: Milwaukee Brewers
+    MIN: Minnesota Twins
+    NYM: New York Mets
+    NYY: New York Yankees
+    OAK: Oakland Athletics
+    PHI: Philadelphia Phillies
+    PIT: Pittsburgh Pirates
+    SD: San Diego Padres
+    SEA: Seattle Mariners 
+    SF: San Francisco Giants
+    STL: Saint Louis Cardinals
+    TB: Tampa Bay Rays
+    TEX: Texas Rangers
+    TOR: Totonto Blue Jays 
+    WAS: Washington Nationals
+Level: Nivel de juego en el que se encontraba al ocurrir la lesion
+    A: A-Ball
+    A-: Low-A-Ball
+    A+: High-A-Ball
+    AA: Double-A
+    AAA: Triple-A
+    Coll: College baseball (NCAA), colegial
+    HS: Highschool, preparatoria
+    MLB: Major League Baseball.
+    Rk: Rookie-Ball
+Position: posicion de campo a la defensiva en la que se desempeña de manera más regular
+    1B: Primera Base
+    2B: Seguna Base
+    3B: Tercera Base
+    C: Catcher/Receptor
+    CF: Jardinero Central
+    IF: Jugador de cuadro
+    OF: Jardinero
+    RP: Lanzador Relevista
+    SP: Lanzador Inicial / Abridor
+    SS: Parador en corto
+Throws: con que brazo lanza la pelota
+    L: Brazo izquierdo
+    R: brazo derecho
+Age: edad al ocurrir la lesion/cirugía
+    Rango: [13, 47]
+Year: año en el que se somete a cirugia
+    Rango [1974, 2021]
+AB (All levels): At-bats, turnos al bate en todos los niveles antes de la lesion
+    Rango [0, 8285]
+IP (All levels): Innings Pitched, entradas lanzadas antes de la lesion en todos los niveles
+    Rango [0, 4751]
+    Nota .3 hace referencia a 1/3 de IP y .6 a 2/3 de IP
+G (All levels): Juegos jugados antes de la lesion en todos los niveles
+    Rango [0, 2365]
