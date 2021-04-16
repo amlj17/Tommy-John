@@ -1,5 +1,5 @@
 Descriptores por columna:
-Name: Nombre del jugador
+Player: Nombre del jugador
 Team: equipo en el que se encontraba al darse la lesion/operacion
     ARI: Arizona Diamondbacks
     ATL: Atlanta Braves
@@ -55,14 +55,29 @@ Position: posicion de campo a la defensiva en la que se desempeña de manera má
 Throws: con que brazo lanza la pelota
     L: Brazo izquierdo
     R: brazo derecho
+Country: en que pais nace
+HighSchool: en que estado de EEUU hace preparatoria, si es fuera sale internacional
+College: a donde fue a la universidad. Nombre de la universidad. Si no atendio es none
 Age: edad al ocurrir la lesion/cirugía
     Rango: [13, 47]
+Surgeon: quien lo operó, si no se sabe dice unknown
 Year: año en el que se somete a cirugia
     Rango [1974, 2021]
-AB (All levels): At-bats, turnos al bate en todos los niveles antes de la lesion
+AB before surgery: At-bats, turnos al bate en todos los niveles antes de la lesion
     Rango [0, 8285]
-IP (All levels): Innings Pitched, entradas lanzadas antes de la lesion en todos los niveles
+IP before surgery: Innings Pitched, entradas lanzadas antes de la lesion en todos los niveles
     Rango [0, 4751]
     Nota .3 hace referencia a 1/3 de IP y .6 a 2/3 de IP
-G (All levels): Juegos jugados antes de la lesion en todos los niveles
+G beofre surgery: Juegos jugados antes de la lesion en todos los niveles
     Rango [0, 2365]
+Injured Elbow: que codo es el que se lastimó
+    L: left
+    R: right
+Inj E is Throw E: si el codo que se lastimo es con el que lanza:
+    True: son el mismo codo
+    False: son codos distintos
+Velo: velocity, velocidad promedio de las rectas o lanzamientos de velocidad
+Velo > Avg: si la velocidad es mayor al promedio de la liga
+%BRK/OFF: porcentaje de veces que el lanzador utiliza un lanzamiento de cambio de velocidad o rompiente
+BRK/OFF > AVg: si su uso de lanzamientos rompientes o cambios de velocidad es mayor al promedio de la liga
+
