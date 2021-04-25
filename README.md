@@ -10,7 +10,7 @@ Así se elimina el factor de ya haber tenido dicha lesión y cirugía con anteri
 
 Consta de 3 partes principales
 1. Primer filtrado y limpieza (python)
-2. Generar Dfs o vistas para graficar (SQL)
+2. Generar Dfs o vistas para graficar (python/tableau)
 3. Generar elementos gráficos (Tableau)
 
 El proyecto busca explorar factores de riesgo que inciden en la leson de UCL/MUCL
